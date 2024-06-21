@@ -51,6 +51,9 @@ const Index = () => {
                             </div>
                         ))
                     )}
+                    <div className="col-12 text-center my-5">
+                        <button className={indexStyles.bottone}><h1><Link to={"http://localhost:5173/"}>Torna alla pagina iniziale</Link></h1></button>
+                    </div>
                 </div>
             </div>
         </main>
