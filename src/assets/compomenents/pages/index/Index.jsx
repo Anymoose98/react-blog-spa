@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import indexStyles from './index.module.scss';
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Index = () => {
     const [posts, setPosts] = useState(null);
@@ -45,7 +45,7 @@ const Index = () => {
                                         <img src={post.image} alt={post.title} className={indexStyles.image} />
                                     </figure>
                                     <p><strong>Creato il:</strong> {formatDate(post.createdAt)}</p>
-                                    <button><h4>Scopri il post</h4></button>
+                                    <button><h4><Link to={`http://localhost:5173/lista/${post.slug}`}>Scopri il post</Link></h4></button>
                                 </div>
 
                             </div>

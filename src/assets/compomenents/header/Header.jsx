@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
     return (
         <header className={headerStyles.bgheader} >
-    
-                <h1 className="text-center">REACT BLOG SPA</h1>
-      
+            <h1 className="text-center">REACT BLOG SPA</h1>
         </header>
     )
 }
